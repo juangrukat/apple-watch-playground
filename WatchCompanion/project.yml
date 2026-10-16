@@ -1,0 +1,72 @@
+name: WatchPlayground
+options:
+  bundleIdPrefix: com.example.watchplayground
+  deploymentTarget:
+    watchOS: '10.0'
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+targets:
+  WatchPlaygroundWatch:
+    type: application
+    platform: watchOS
+    sources:
+      - WatchApp.swift
+      - SessionCore.swift
+      - CaptureEngine.swift
+      - SensorServices.swift
+      - PacketScheduler.swift
+      - BluetoothTransport.swift
+      - HTTPTransport.swift
+      - WatchSession.swift
+      - AudioMeter.swift
+      - ../Sources/WatchPlayground/CommandWire.swift
+      - ../Sources/WatchPlayground/BLEWire.swift
+      - ../Sources/WatchPlayground/RuntimeMetrics.swift
+      - ../Sources/WatchPlayground/LatestFeedQueue.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.watchplayground.companion
+        INFOPLIST_KEY_CFBundleDisplayName: Playground
+        INFOPLIST_KEY_WKApplication: YES
+        INFOPLIST_KEY_WKWatchOnly: YES
+        INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription: Stream sensor feeds directly to your paired Mac with low latency.
+        INFOPLIST_KEY_NSMotionUsageDescription: Show wrist movement in your local sensor playground.
+        INFOPLIST_KEY_NSLocationWhenInUseUsageDescription: Show location and compass on your Mac only when you enable them.
+        INFOPLIST_KEY_NSMicrophoneUsageDescription: Show microphone level in your playground when enabled.
+        INFOPLIST_KEY_NSHealthShareUsageDescription: Show your latest saved heart rate, HRV, oxygen and wrist temperature when requested.
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: Send sensor feeds to your paired Mac on your private network.
+        INFOPLIST_KEY_NSSupportsLiveActivities: NO
+    info:
+      path: Info.plist
+      properties:
+        UIBackgroundModes: [bluetooth-central]
+        WKSupportsAlwaysOnDisplay: true
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSAllowsArbitraryLoads: true
+    entitlements:
+      path: WatchPlayground.entitlements
+      properties:
+        com.apple.developer.healthkit: true
+
+  PlaygroundPhoneProbe:
+    type: application
+    platform: iOS
+    deploymentTarget: '17.0'
+    sources:
+      - PhoneProbe/PhoneProbe.swift
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.watchplayground.phoneprobe
+        INFOPLIST_KEY_CFBundleDisplayName: Playground Check
+        INFOPLIST_KEY_NSLocalNetworkUsageDescription: Check whether your iPhone can reach the Watch Playground on your Mac.
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    info:
+      path: PhoneProbe/Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSAllowsArbitraryLoads: true

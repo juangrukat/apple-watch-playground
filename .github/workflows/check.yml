@@ -1,0 +1,29 @@
+name: Build and regression checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  mac-and-fixtures:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+      - run: ./scripts/check.sh
+  simulator-builds:
+    runs-on: macos-15
+    strategy:
+      matrix:
+        include:
+          - scheme: WatchPlaygroundWatch
+            destination: generic/platform=watchOS Simulator
+          - scheme: PlaygroundPhoneProbe
+            destination: generic/platform=iOS Simulator
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compile unsigned simulator target
+        run: >-
+          xcodebuild -project WatchCompanion/WatchPlayground.xcodeproj
+          -scheme '${{ matrix.scheme }}' -configuration Debug
+          -destination '${{ matrix.destination }}'
+          -derivedDataPath .build/simulator CODE_SIGNING_ALLOWED=NO build

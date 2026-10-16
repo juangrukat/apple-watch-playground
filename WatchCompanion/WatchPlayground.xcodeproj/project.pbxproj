@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1ABEA1CDA4C90A63CFB5C520 /* SensorServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 008B046608190771BA8A529B /* SensorServices.swift */; };
+		1CE9ACE0E913ECE1C87172CB /* CaptureEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57F2C0A7ECC3F43BC2518DE6 /* CaptureEngine.swift */; };
+		291B5B8995872413ED6F64C3 /* WatchSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D509A46ED5C0B882AD17B /* WatchSession.swift */; };
+		446DDCACAD15EA2F8BBC9404 /* HTTPTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44BFBF85C4B138793BEEED8 /* HTTPTransport.swift */; };
+		5BF785B1A47FAA2C07D0D54D /* AudioMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4CE55011227EF79010E63EA /* AudioMeter.swift */; };
+		6DC9AE7FB2C0D621BCCCCD8C /* LatestFeedQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = F787FC8A09A494CDA5A4E0B3 /* LatestFeedQueue.swift */; };
+		9CD4C3EB0BF4D9E7645DC3A4 /* SessionCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E6BCA2FC2AB7D7EC5A154C /* SessionCore.swift */; };
+		9F79A880ED8DA7656A780AAF /* PhoneProbe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09EEE847ED981FA5CED299F6 /* PhoneProbe.swift */; };
+		A5F13BB5414ACC3B037ADDB3 /* CommandWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E10159BC2E4E04917A38657 /* CommandWire.swift */; };
+		BA3EE64C0D58CCD2644F09B2 /* WatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB912AED7CC16AFBE9FE83E /* WatchApp.swift */; };
+		BF392196499BC29423191020 /* RuntimeMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A20849EF01E4EDF5172544C /* RuntimeMetrics.swift */; };
+		DE2AD9AC75302C45AD23421F /* BLEWire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038E920BFF448DD45691C16F /* BLEWire.swift */; };
+		F595F76B2C58CF779E86B395 /* BluetoothTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958873DD78BCA9AA3C7F1C7D /* BluetoothTransport.swift */; };
+		FF94DEA2F97BA19A2F0D01EA /* PacketScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24534B9814D7FD9C6509510 /* PacketScheduler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		008B046608190771BA8A529B /* SensorServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SensorServices.swift; sourceTree = "<group>"; };
+		038E920BFF448DD45691C16F /* BLEWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEWire.swift; sourceTree = "<group>"; };
+		09EEE847ED981FA5CED299F6 /* PhoneProbe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneProbe.swift; sourceTree = "<group>"; };
+		1D70D2CA72E10B5F4D618737 /* WatchPlaygroundWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPlaygroundWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E10159BC2E4E04917A38657 /* CommandWire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommandWire.swift; sourceTree = "<group>"; };
+		57F2C0A7ECC3F43BC2518DE6 /* CaptureEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureEngine.swift; sourceTree = "<group>"; };
+		6A20849EF01E4EDF5172544C /* RuntimeMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RuntimeMetrics.swift; sourceTree = "<group>"; };
+		75E6BCA2FC2AB7D7EC5A154C /* SessionCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionCore.swift; sourceTree = "<group>"; };
+		958873DD78BCA9AA3C7F1C7D /* BluetoothTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTransport.swift; sourceTree = "<group>"; };
+		A44BFBF85C4B138793BEEED8 /* HTTPTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPTransport.swift; sourceTree = "<group>"; };
+		AEB912AED7CC16AFBE9FE83E /* WatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchApp.swift; sourceTree = "<group>"; };
+		B24534B9814D7FD9C6509510 /* PacketScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketScheduler.swift; sourceTree = "<group>"; };
+		B84D509A46ED5C0B882AD17B /* WatchSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSession.swift; sourceTree = "<group>"; };
+		D4CE55011227EF79010E63EA /* AudioMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioMeter.swift; sourceTree = "<group>"; };
+		F787FC8A09A494CDA5A4E0B3 /* LatestFeedQueue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatestFeedQueue.swift; sourceTree = "<group>"; };
+		FD00CCA9A570BCC43B4D77C4 /* PlaygroundPhoneProbe.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = PlaygroundPhoneProbe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		72B57BB4FC5471DAFC3151CA = {
+			isa = PBXGroup;
+			children = (
+				D4CE55011227EF79010E63EA /* AudioMeter.swift */,
+				958873DD78BCA9AA3C7F1C7D /* BluetoothTransport.swift */,
+				57F2C0A7ECC3F43BC2518DE6 /* CaptureEngine.swift */,
+				A44BFBF85C4B138793BEEED8 /* HTTPTransport.swift */,
+				B24534B9814D7FD9C6509510 /* PacketScheduler.swift */,
+				008B046608190771BA8A529B /* SensorServices.swift */,
+				75E6BCA2FC2AB7D7EC5A154C /* SessionCore.swift */,
+				AEB912AED7CC16AFBE9FE83E /* WatchApp.swift */,
+				B84D509A46ED5C0B882AD17B /* WatchSession.swift */,
+				8FE41896C4BB4B234521B62B /* PhoneProbe */,
+				79185C123F91E9C505D83621 /* WatchPlayground */,
+				9EBE07EC13E8D46744E83BEC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79185C123F91E9C505D83621 /* WatchPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				038E920BFF448DD45691C16F /* BLEWire.swift */,
+				1E10159BC2E4E04917A38657 /* CommandWire.swift */,
+				F787FC8A09A494CDA5A4E0B3 /* LatestFeedQueue.swift */,
+				6A20849EF01E4EDF5172544C /* RuntimeMetrics.swift */,
+			);
+			name = WatchPlayground;
+			path = ../Sources/WatchPlayground;
+			sourceTree = "<group>";
+		};
+		8FE41896C4BB4B234521B62B /* PhoneProbe */ = {
+			isa = PBXGroup;
+			children = (
+				09EEE847ED981FA5CED299F6 /* PhoneProbe.swift */,
+			);
+			path = PhoneProbe;
+			sourceTree = "<group>";
+		};
+		9EBE07EC13E8D46744E83BEC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD00CCA9A570BCC43B4D77C4 /* PlaygroundPhoneProbe.app */,
+				1D70D2CA72E10B5F4D618737 /* WatchPlaygroundWatch.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18832CE2C109C3A51541321A /* WatchPlaygroundWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8073BFD5527290DBC44CF341 /* Build configuration list for PBXNativeTarget "WatchPlaygroundWatch" */;
+			buildPhases = (
+				0739ACCC79CA8DCF9A06AD4B /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WatchPlaygroundWatch;
+			packageProductDependencies = (
+			);
+			productName = WatchPlaygroundWatch;
+			productReference = 1D70D2CA72E10B5F4D618737 /* WatchPlaygroundWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		71AC471FB1883B1456D3D0A0 /* PlaygroundPhoneProbe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3B2EF234DB2A57CAD9E5F33 /* Build configuration list for PBXNativeTarget "PlaygroundPhoneProbe" */;
+			buildPhases = (
+				9F7E219510E65EE6051917FC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlaygroundPhoneProbe;
+			packageProductDependencies = (
+			);
+			productName = PlaygroundPhoneProbe;
+			productReference = FD00CCA9A570BCC43B4D77C4 /* PlaygroundPhoneProbe.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C763AADD5F73E1C3D4A48BA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					18832CE2C109C3A51541321A = {
+						ProvisioningStyle = Automatic;
+					};
+					71AC471FB1883B1456D3D0A0 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B342DEF29EBAC306B60F99E4 /* Build configuration list for PBXProject "WatchPlayground" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 72B57BB4FC5471DAFC3151CA;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9EBE07EC13E8D46744E83BEC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18832CE2C109C3A51541321A /* WatchPlaygroundWatch */,
+				71AC471FB1883B1456D3D0A0 /* PlaygroundPhoneProbe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0739ACCC79CA8DCF9A06AD4B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF785B1A47FAA2C07D0D54D /* AudioMeter.swift in Sources */,
+				DE2AD9AC75302C45AD23421F /* BLEWire.swift in Sources */,
+				F595F76B2C58CF779E86B395 /* BluetoothTransport.swift in Sources */,
+				1CE9ACE0E913ECE1C87172CB /* CaptureEngine.swift in Sources */,
+				A5F13BB5414ACC3B037ADDB3 /* CommandWire.swift in Sources */,
+				446DDCACAD15EA2F8BBC9404 /* HTTPTransport.swift in Sources */,
+				6DC9AE7FB2C0D621BCCCCD8C /* LatestFeedQueue.swift in Sources */,
+				FF94DEA2F97BA19A2F0D01EA /* PacketScheduler.swift in Sources */,
+				BF392196499BC29423191020 /* RuntimeMetrics.swift in Sources */,
+				1ABEA1CDA4C90A63CFB5C520 /* SensorServices.swift in Sources */,
+				9CD4C3EB0BF4D9E7645DC3A4 /* SessionCore.swift in Sources */,
+				BA3EE64C0D58CCD2644F09B2 /* WatchApp.swift in Sources */,
+				291B5B8995872413ED6F64C3 /* WatchSession.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F7E219510E65EE6051917FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F79A880ED8DA7656A780AAF /* PhoneProbe.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		36293528718BC5E69294473C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchPlayground.entitlements;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Playground;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Stream sensor feeds directly to your paired Mac with low latency.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Show your latest saved heart rate, HRV, oxygen and wrist temperature when requested.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Send sensor feeds to your paired Mac on your private network.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show location and compass on your Mac only when you enable them.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Show microphone level in your playground when enabled.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Show wrist movement in your local sensor playground.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = NO;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.watchplayground.companion;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		4CE598C1280574E356C3C37C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PhoneProbe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Playground Check";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Check whether your iPhone can reach the Watch Playground on your Mac.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.watchplayground.phoneprobe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6F051F40E3B645A15DFD919E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WatchPlayground.entitlements;
+				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Playground;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Stream sensor feeds directly to your paired Mac with low latency.";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Show your latest saved heart rate, HRV, oxygen and wrist temperature when requested.";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Send sensor feeds to your paired Mac on your private network.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Show location and compass on your Mac only when you enable them.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Show microphone level in your playground when enabled.";
+				INFOPLIST_KEY_NSMotionUsageDescription = "Show wrist movement in your local sensor playground.";
+				INFOPLIST_KEY_NSSupportsLiveActivities = NO;
+				INFOPLIST_KEY_WKApplication = YES;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.watchplayground.companion;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		9F623AB4599FECD9305167A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		E4E11BDAC9D6B0E269813613 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				WATCHOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		F414A2DE00F4B56BAFB0F607 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = PhoneProbe/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Playground Check";
+				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Check whether your iPhone can reach the Watch Playground on your Mac.";
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.watchplayground.phoneprobe;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8073BFD5527290DBC44CF341 /* Build configuration list for PBXNativeTarget "WatchPlaygroundWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36293528718BC5E69294473C /* Debug */,
+				6F051F40E3B645A15DFD919E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B342DEF29EBAC306B60F99E4 /* Build configuration list for PBXProject "WatchPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4E11BDAC9D6B0E269813613 /* Debug */,
+				9F623AB4599FECD9305167A6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3B2EF234DB2A57CAD9E5F33 /* Build configuration list for PBXNativeTarget "PlaygroundPhoneProbe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F414A2DE00F4B56BAFB0F607 /* Debug */,
+				4CE598C1280574E356C3C37C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C763AADD5F73E1C3D4A48BA /* Project object */;
+}
