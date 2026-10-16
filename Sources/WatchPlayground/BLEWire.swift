@@ -42,7 +42,14 @@ enum BLEWire {
         return (u16(1),quaternion.map{$0/norm},Array(values.suffix(3)),u16(17))
     }
     static func diagnostics(_ d:[String:Double])->[Data] {
-        let flag=UInt8(d["active"]==1 ? 1:0) | UInt8(d["dimmed"]==1 ? 2:0) | UInt8(d["lowPower"]==1 ? 4:0) | UInt8(d["crownLeft"]==1 ? 8:0) | UInt8(d["wristRight"]==1 ? 16:0) | UInt8(max(0,min(3,d["thermal"] ?? 0)))<<5
+        var flag:UInt8=0
+        if d["active"]==1 { flag |= 1 }
+        if d["dimmed"]==1 { flag |= 2 }
+        if d["lowPower"]==1 { flag |= 4 }
+        if d["crownLeft"]==1 { flag |= 8 }
+        if d["wristRight"]==1 { flag |= 16 }
+        let thermal=UInt8(max(0,min(3,d["thermal"] ?? 0)))
+        flag |= thermal << 5
         func floats(_ type:UInt8,_ names:[String],prefix:Data=Data())->Data {
             var frame=Data([type]);frame.append(prefix)
             for name in names { var bits=Float(d[name] ?? -1).bitPattern.littleEndian;withUnsafeBytes(of:&bits){frame.append(contentsOf:$0)} }

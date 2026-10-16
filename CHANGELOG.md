@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.0-alpha.2 — 2026-10-16
+
+- Split diagnostic flag packing into explicit typed steps for Swift compiler portability. Wire bytes are unchanged.
+
 ## 0.1.0-alpha.1 — 2026-10-16
 
 Initial experimental source release.
